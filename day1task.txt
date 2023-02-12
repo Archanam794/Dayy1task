@@ -1,0 +1,33 @@
+1.HTTP1 vs HTTP2
+HTTP stands for 
+HyperText Transfer Protocol & it is used in client-server communication. 
+By using HTTP user sends the request to the server & the server sends the response to the user. 
+There are several stages of development of HTTP but we will focus mainly on HTTP/1.1 which was created in 1997
+& the new one is HTTP/2 which was created in 2015.
+
+HTTP/1.1
+In HTTP/1.1, a client sends a text-based request to a server by calling a method like GET or POST. 
+In response, the server sends a resource like an HTML page back to the client.
+this exchange of requests and responses as a single application layer of the internet protocol stack, 
+sitting on top of the transfer layer (usually using the Transmission Control Protocol, or TCP) and networking layers (using the Internet Protocol, or IP).The first problem is HTTP/1.1 transfer all the requests & responses in the plain text message form.The second one is head of line blocking in which TCP connection is blocked all other requests until the response does not receive.all the information related to the header file is repeated in every request.
+
+HTTP/2
+HTTP/2 was developed over the SPDY protocol. HTTP/2 works on the binary framing layer instead of textual that converts all the messages in binary format. it works on fully multiplexed that is one TCP connection is used for multiple requests. HTTP/2 uses HPACK which is used to split data from header. it compresses the header.the server sends all the other files like CSS & JS without the request of the client using the PUSH frame.
+
+2.OBJECTS IN JAVASCRIPT
+Objects means key:value pairs, it is reference data types,it may contain any combination of these primitive data-types as well as reference data-types.Variables that are assigned a reference value are given a reference or a pointer to that value. That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.
+Properties of Object:
+1.DOT METHOD
+ A property of an object can be explained as a variable that is attached to the object. Object properties are basically the same as ordinary JavaScript variables, except for the attachment to objects. The properties of an object define the characteristics of the object. You access the properties of an object with a simple dot-notation:
+
+objectname.propertyname;
+
+2.BOX /BRACKET METHOD
+Properties of JavaScript objects can also be accessed or set using a bracket notation. Objects are sometimes called associative arrays, since each property is associated with a string value that can be used to access it.
+
+objectname['propertyname'];
+
+
+
+
+
